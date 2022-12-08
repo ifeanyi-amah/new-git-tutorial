@@ -1,0 +1,418 @@
+
+    @font-face {
+        font-family: Comic;
+        src: url("../fonts/COMIC.TTF");
+    }
+    @font-face {
+        font-family: swiss;
+        src: url("../fonts/swiss 721 black condensed bt.ttf");
+    }
+
+    @media print{
+        /*.general{*/
+            /*zoom: 0.74!important;*/
+        /*}*/
+        .general{
+            margin-top: 100px!important;
+        }
+        section{
+            break-after:page;
+        }
+        .sch-name h1{
+            font-family: swiss;
+            font-size: 71px!important;
+            font-weight: bold;
+            color: #801f20!important;
+            text-align: right;
+            margin-top: 20px!important;
+        }
+        .sch-name h6{
+            font-family: Arial;
+            font-size: 20px!important;
+            font-weight: bold;
+            color: black;
+            text-align: right;
+            line-height: 20px!important;
+        }
+        .term h5{
+            /*border: 1px solid black;*/
+            font-family: Arial;
+            font-size: 20px!important;
+            font-weight: bold;
+            text-align: center;
+            color: white!important;
+            background-color: #801f20!important;
+            padding: 10px 0;
+        }
+        .attend h6{
+            font-family: Arial;
+            font-size: 18px!important;
+            font-weight: bold;
+            color: black;
+        }
+        .gen-num{
+            margin-left: 40px!important;
+        }
+        .times{
+            border: 1px solid black!important;
+            padding: 15px 10px!important;
+            height: 110px!important;
+            /*box-shadow: -10px -10px #ebebeb!important;*/
+        }
+        .stud-name h6{
+            font-family: Arial;
+            font-size: 20px!important;
+            color: black;
+        }
+        .create h6{
+            font-family: Arial;
+            font-size: 20px!important;
+            color: black;
+        }
+        /*.logo img{*/
+        /*width: 180px!important;*/
+        /*}*/
+        .bord h6{
+            border: 1px solid black!important;
+            /*border-radius: 5px;*/
+            font-family: Arial;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            padding: 5px!important;
+            color: black;
+        }
+        .gen-bord{
+            margin-top: -5px!important;
+            margin-left: 20px;
+        }
+        .activate{
+            border: 1px solid black!important;
+            padding: 10px 3px 0px!important;
+        }
+        th.rotate {
+            height: 180px!important;
+            padding: 0px;
+        }
+
+        th.rotate > div {
+            transform: rotate(-90deg);
+            filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+            width: 35px;
+            padding: 1px 1px !important;
+        }
+
+        .textH {
+            overflow: visible;
+            /*height: 150px !important;*/
+            width: 170px !important;
+            text-align: left;
+            margin-left: 15%!important;
+            font-weight: bold;
+            margin-top: 25px!important;
+            line-height: 20px;
+        }
+        .grade h6{
+            font-family: Arial;
+            font-size: 22px!important;
+            color: black;
+            text-align: center;
+            font-weight: normal!important;
+            /*float: right;*/
+        }
+        .wide{
+            width: 32%!important;
+        }
+        .pix{
+            border: 1px solid black!important;
+            border-radius: 12px;
+            padding: 10px!important;
+        }
+
+
+
+
+    }
+
+
+    /* SCREEN STYLING */
+
+    /*.general{*/
+    /*zoom: 0.80;*/
+    /*}*/
+    .general{
+        margin: 50px;
+    }
+    .sch-name h1{
+        font-family: swiss;
+        font-size: 78px;
+        font-weight: bold;
+        color: #801f20!important;
+        text-align: right;
+    }
+    .sch-name h6{
+        font-family: Arial;
+        font-size: 22px;
+        font-weight: bold;
+        color: black;
+        text-align: right;
+    }
+    .logo img{
+        width: 200px;
+    }
+    .term h5{
+        /*border: 1px solid black;*/
+        font-family: Arial;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        color: white!important;
+        background-color: #801f20!important;
+        padding: 10px 0;
+    }
+    .attend h6{
+        font-family: Arial;
+        font-size: 20px;
+        font-weight: bold;
+        color: black;
+    }
+    .times{
+        border: 1px solid #801f20!important;
+        padding: 20px 10px;
+        height: 125px;
+        /*box-shadow: -10px -10px #ebebeb;*/
+        margin-top: -10px;
+    }
+    .times h6{
+        /*border: 1px solid #74380a!important;*/
+        font-family: Arial;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: left;
+        color: black;
+    }
+    .bord h6{
+        border: 1px solid black!important;
+        /*border-radius: 5px;*/
+        font-family: Arial;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        padding: 10px;
+        color: black;
+    }
+    .gen-bord{
+        margin-top: -16px;
+        margin-left: 20px;
+    }
+    .gen-num{
+        margin-left: 50px;
+    }
+    /*.adjust{*/
+    /*width: 100%;*/
+    /*}*/
+    .adjust td{
+        border: 1px solid black!important;
+        font-family: Arial;
+        font-size: 20px;
+        color: black;
+        font-weight: normal!important;
+        padding: 0 10px;
+        height: 50px;
+    }
+    .term-begins td{
+        background-color: #801f20!important;
+        color: white!important;
+        font-size: 16px!important;
+    }
+    .stud-name h6{
+        font-family: Arial;
+        font-size: 20px;
+        color: black;
+    }
+    .multiple-color td{
+        background-color: #801f20!important;
+        color: white!important;
+    }
+    .create span{
+        border-left: 1px solid black!important;
+        background-color: #801f20!important;
+        color: white!important;
+        padding: 10px 5px;
+        font-weight: bold!important;
+    }
+    .create h6{
+        font-family: Arial;
+        font-size: 20px;
+        color: black;
+    }
+    .lines{
+        border-bottom: 1px solid #ebebeb!important;
+        margin-bottom: 10px;
+    }
+    .lines{
+        padding-left: 5px;
+    }
+    .pix{
+        border: 1px solid black!important;
+        border-radius: 12px;
+        padding: 5px;
+    }
+    .activate{
+        border: 1px solid black!important;
+        padding: 10px 3px 0px;
+    }
+    .text h6{
+        font-family: Arial;
+        font-size: 25px;
+        color: black;
+        font-weight: bold!important;
+    }
+    .table-bordered{
+        width: 100%;
+    }
+    .table-bordered th{
+        border: 1px solid white!important;
+        font-family: Arial;
+        font-size: 20px;
+        color: white!important;
+        font-weight: bold!important;
+        text-align: center;
+        vertical-align: bottom!important;
+        background: #801f20!important;
+        /*background: linear-gradient(white, #ebf0f3)!important;*/
+    }
+    .table-bordered td{
+        border: 1px solid black!important;
+        font-family: Arial;
+        font-size: 20px;
+        color: black;
+        padding: 0 10px;
+        font-weight: bold!important;
+    }
+    .table-bordered1{
+        width: 100%;
+    }
+    .table-bordered1 th{
+        border: 1px solid #801f20!important;
+        font-family: Arial;
+        font-size: 20px;
+        padding: 0 10px;
+        color: white!important;
+        font-weight: bold!important;
+        background-color: #801f20!important;
+    }
+    .table-bordered1 td{
+        border: 1px solid #801f20!important;
+        font-family: Arial;
+        font-size: 18px;
+        color: black!important;
+        padding: 0 10px;
+        font-weight: bold!important;
+        height: 50px;
+    }
+    th.rotate {
+        height: 180px;
+        padding: 0px;
+    }
+
+    th.rotate > div {
+        transform: rotate(-90deg);
+        filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+        width: 50px;
+        padding: 1px 1px !important;
+    }
+    .textH {
+        overflow: visible;
+        /*height: 150px !important;*/
+        width: 170px !important;
+        text-align: left;
+        margin-left: 12%;
+        font-weight: bold;
+        margin-top: 30px;
+        line-height: 20px;
+    }
+    .wide{
+        width: 30%;
+    }
+    .wide1{
+        width: 35%;
+    }
+    .grade h6{
+        font-family: Arial;
+        font-size: 22px;
+        color: black;
+        text-align: center;
+        font-weight: normal!important;
+        /*float: right;*/
+    }
+    fieldset{
+        border: 1px solid black!important;
+        width: 100%;
+        /*height: 130px;*/
+    }
+    legend{
+        width: auto!important;
+        border-bottom: none!important;
+        margin-bottom: 0!important;
+        font-size: 20px!important;
+        color: black!important;
+        font-weight: bold!important;
+        margin-left: 10px!important;
+        padding-left: 10px!important;
+    }
+    label{
+        font-size: 20px!important;
+        color: black!important;
+        font-weight: normal!important;
+        padding-left: 10px;
+    }
+    .lines-2 h6{
+        border-bottom: 1px solid #ebebeb!important;
+        text-align: center;
+    }
+    .create h5{
+        font-family: Arial;
+        font-size: 20px;
+        color: black;
+    }
+    .vertical-line{
+        border-bottom: 1px solid black!important;
+        text-align: center!important;
+        padding-bottom: 5px!important;
+    }
+    .vertical-line span{
+        font-family: Arial;
+        font-size: 20px;
+        color: black;
+        font-weight: bold!important;
+    }
+    /*.chart-report h6{*/
+    /*font-family: Arial;*/
+    /*font-size: 30px;*/
+    /*color: black;*/
+    /*}*/
+    .teach-sign h6{
+        font-family: Arial;
+        font-size: 20px;
+        color: black;
+        text-align: center!important;
+        font-weight: bold!important;
+    }
+    .contentContainer {
+        position: relative!important;
+        z-index: 2!important;
+        right: 300px;
+        width: 1600px;
+        height: 100px;
+    }
+    .contentBackground {
+        position: absolute!important;
+        display: block!important;
+        z-index: -1;
+        opacity: 0.04!important;
+        top: -1000px;
+        right: 0;
+        bottom: 0;
+        left: 250px;
+    }
